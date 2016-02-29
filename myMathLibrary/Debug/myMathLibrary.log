@@ -1,0 +1,13 @@
+﻿Build started 2/29/2016 11:28:44 AM.
+     1>Project "C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\myMathLibrary\myMathLibrary.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt mat4.cpp
+         mat4.cpp
+     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\mat4.cpp(72): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\mat4.cpp(80): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\mat4.cpp(44): error C4716: 'bab::mat4::Determinant': must return a value
+     1>Done Building Project "C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\myMathLibrary\myMathLibrary.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.62
