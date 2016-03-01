@@ -1,5 +1,6 @@
 #include "mat4.h"
 #include "mat3.h"
+#include "vec3.h"
 #include <stdlib.h>
 #include <ctime>
 
@@ -54,10 +55,23 @@ namespace bab
 		m3[3].Matrix[1][0] = this->Matrix[2][0]; m3[3].Matrix[1][1] = this->Matrix[2][1]; m3[3].Matrix[1][2] = this->Matrix[2][2];
 		m3[3].Matrix[2][0] = this->Matrix[3][0]; m3[3].Matrix[2][1] = this->Matrix[3][1]; m3[3].Matrix[2][2] = this->Matrix[3][2];
 
-		D = m3[0].Determinant() - m3[1].Determinant() + m3[2].Determinant() - m3[3].Determinant();
+		D = m3[0].Determinant() + -m3[1].Determinant() + m3[2].Determinant() + -m3[3].Determinant();
 		return D;
 	
 	}
+
+
+	mat4 mat4::Transpose()
+	{
+		mat4 result;
+		Vec3 col[4] = {};
+		Vec3 row[4] = {};
+
+
+		return result;
+	}
+
+
 
 	mat4 mat4::diagonalFlip()
 	{
@@ -98,6 +112,61 @@ namespace bab
 		}
 
 	}
+
+	void mat4::Scale(float x, float y, float z)
+	{
+		this->Matrix[0][0] = this->Matrix[0][0] * x;
+		this->Matrix[1][1] = this->Matrix[1][1] * y;
+		this->Matrix[2][2] = this->Matrix[2][2] * z;
+
+	}
+
+
+
+	void mat4::Rotate(char axis,float degrees)
+	{
+		if (axis == 'x' || axis == 'X')
+		{
+			this->Matrix[1][1] = cosf(degrees);
+			this->Matrix[1][2] = -sinf(degrees);
+			this->Matrix[2][1] = sinf(degrees);
+			this->Matrix[2][2] = cosf(degrees);
+		}
+
+		if (axis == 'y' || axis == 'y')
+		{
+			this->Matrix[0][0] = cosf(degrees);
+			this->Matrix[0][2] = sinf(degrees);
+			this->Matrix[2][0] = -sinf(degrees);
+			this->Matrix[2][2] = cosf(degrees);
+		}
+
+		if (axis == 'z' || axis == 'z')
+		{
+			this->Matrix[0][0] = cosf(degrees);
+			this->Matrix[0][1] = -sinf(degrees);
+			this->Matrix[1][0] = sinf(degrees);
+			this->Matrix[1][1] = cosf(degrees);
+		}
+
+		
+	}
+
+	void mat4::Translate(float x, float y, float z)
+	{
+		this->Matrix[0][3] += x;
+		this->Matrix[1][3] += y;
+		this->Matrix[2][3] += z;
+	}
+
+	void mat4::MoveTo(float x, float y, float z)
+	{
+		this->Matrix[0][3] = x;
+		this->Matrix[1][3] = y;
+		this->Matrix[2][3] = z;
+	}
+
+
 
 	/* //////////////////////////////////////Out of the Struct Functions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
