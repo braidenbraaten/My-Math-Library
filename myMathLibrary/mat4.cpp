@@ -36,10 +36,26 @@ namespace bab
 
 	float mat4::Determinant()
 	{
+		float D = 0;
 		mat3 m3[4] = {};
 		m3[0].Matrix[0][0] = this->Matrix[1][1]; m3[0].Matrix[0][1] = this->Matrix[1][2]; m3[0].Matrix[0][2] = this->Matrix[1][3];
 		m3[0].Matrix[1][0] = this->Matrix[2][1]; m3[0].Matrix[1][1] = this->Matrix[2][2]; m3[0].Matrix[1][2] = this->Matrix[2][3];
 		m3[0].Matrix[2][0] = this->Matrix[3][1]; m3[0].Matrix[2][1] = this->Matrix[3][2]; m3[0].Matrix[2][2] = this->Matrix[3][3];
+
+		m3[1].Matrix[0][0] = this->Matrix[1][0]; m3[1].Matrix[0][1] = this->Matrix[1][2]; m3[1].Matrix[0][2] = this->Matrix[1][3];
+		m3[1].Matrix[1][0] = this->Matrix[2][0]; m3[1].Matrix[1][1] = this->Matrix[2][2]; m3[1].Matrix[1][2] = this->Matrix[2][3];
+		m3[1].Matrix[2][0] = this->Matrix[3][0]; m3[1].Matrix[2][1] = this->Matrix[3][2]; m3[1].Matrix[2][2] = this->Matrix[3][3];
+
+		m3[2].Matrix[0][0] = this->Matrix[1][0]; m3[2].Matrix[0][1] = this->Matrix[1][1]; m3[2].Matrix[0][2] = this->Matrix[1][3];
+		m3[2].Matrix[1][0] = this->Matrix[2][0]; m3[2].Matrix[1][1] = this->Matrix[2][1]; m3[2].Matrix[1][2] = this->Matrix[2][3];
+		m3[2].Matrix[2][0] = this->Matrix[3][0]; m3[2].Matrix[2][1] = this->Matrix[3][1]; m3[2].Matrix[2][2] = this->Matrix[3][3];
+
+		m3[3].Matrix[0][0] = this->Matrix[1][0]; m3[3].Matrix[0][1] = this->Matrix[1][1]; m3[3].Matrix[0][2] = this->Matrix[1][2];
+		m3[3].Matrix[1][0] = this->Matrix[2][0]; m3[3].Matrix[1][1] = this->Matrix[2][1]; m3[3].Matrix[1][2] = this->Matrix[2][2];
+		m3[3].Matrix[2][0] = this->Matrix[3][0]; m3[3].Matrix[2][1] = this->Matrix[3][1]; m3[3].Matrix[2][2] = this->Matrix[3][2];
+
+		D = m3[0].Determinant() - m3[1].Determinant() + m3[2].Determinant() - m3[3].Determinant();
+		return D;
 	
 	}
 
