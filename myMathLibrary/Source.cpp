@@ -25,14 +25,16 @@ int main()
 		}
 	}
 
+	
 
-	//for (int i = 0; i < m.rows; i++)
-	//{
-	//	for (int j = 0; j < m.columns; j++)
-	//	{
-	//		cout << m.Matrix[i][j] << endl;
-	//	}
-	//}
+	for (int i = 0; i < m.rows; i++)
+	{
+		for (int j = 0; j < m.columns; j++)
+		{
+			cout << m.Transpose().Matrix[i][j] << " ";
+		}
+		cout << endl;
+	}
 
 	cout << m.Determinant();
 

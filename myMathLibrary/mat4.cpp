@@ -1,6 +1,6 @@
 #include "mat4.h"
 #include "mat3.h"
-#include "vec3.h"
+#include "vec4.h"
 #include <stdlib.h>
 #include <ctime>
 
@@ -63,10 +63,29 @@ namespace bab
 
 	mat4 mat4::Transpose()
 	{
-		mat4 result;
-		Vec3 col[4] = {};
-		Vec3 row[4] = {};
+		mat4 result = *this;
+		Vec4 row[4] = {};
 
+
+		
+		for (int j = 0; j < 4; j++)
+		{
+			row[j].x = result.Matrix[j][0];
+			row[j].y = result.Matrix[j][1];
+			row[j].z = result.Matrix[j][2];
+			row[j].w = result.Matrix[j][3];
+		}
+
+		for (int j = 0; j < 4; j++)
+		{
+			result.Matrix[0][j] = row[j].x;
+			result.Matrix[1][j] = row[j].y;
+			result.Matrix[2][j] = row[j].z;
+			result.Matrix[3][j] = row[j].w;
+		}
+
+		
+		
 
 		return result;
 	}
