@@ -12,6 +12,7 @@ namespace bab
 	};
 
 
+
 	float dot(const Vec2 &lhs, const  Vec2 &rhs);
 
 

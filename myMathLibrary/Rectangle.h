@@ -6,7 +6,9 @@ namespace bab
 	//Pos is based in the center of the object not the top left 
 	class Rectangle
 	{
+		struct Point { float x, y; };
 		Vec2 Pos;
+		Point Min, Max;
 		float length, width;
 	public:
 		Rectangle();
@@ -16,6 +18,10 @@ namespace bab
 		Vec2 getPos();
 		void setPos(float, float);
 		void setPos(Vec2);
+		void setMin(float, float);
+		void setMax(float, float);
+		Point getMin();
+		Point getMax();
 
 	};
 }

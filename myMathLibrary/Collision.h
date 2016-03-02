@@ -6,9 +6,10 @@ namespace bab
 {
 	class Collision
 	{
+		
 		//   Check Circle Circle Collision
 		bool CheckCC(const Vec2&, float, const Vec2&, float);
-		bool CheckCC(const Circle&, const Circle&);
+		bool CheckCC( Circle&,  Circle&);
 		
 		//   Check Circle Rectangle Collision
 		bool CheckCR(const Vec2&, float, const Vec2&, float, float);

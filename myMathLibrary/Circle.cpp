@@ -4,7 +4,8 @@ namespace bab
 {
 	Circle::Circle(Vec2 v, float r)
 	{
-		P = v;
+		P.x = v.x;
+		P.y = v.y;
 		radius = r;
 	}
 

@@ -2,10 +2,14 @@
 #include "vec2.h"
 namespace bab
 {
+	
+	struct Pos { float x, y; };
 	class Circle
 	{
 		Vec2 P;
+		Pos pos;
 		float radius;
+	public:
 		Circle(Vec2,float);
 		Circle();
 
@@ -16,7 +20,7 @@ namespace bab
 		float getRadius();
 		void setRadius(float);
 
-
+		
 	};
 
 }
