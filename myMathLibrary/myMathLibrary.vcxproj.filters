@@ -37,6 +37,9 @@
     <Filter Include="Header Files\Transforms">
       <UniqueIdentifier>{656dd842-8f54-4f53-95b7-de20c108afcb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Collision">
+      <UniqueIdentifier>{7b0aa03c-21e3-4302-99bb-1d58b4f02979}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -95,5 +98,8 @@
     <ClInclude Include="Rectangle.h">
       <Filter>Header Files\Shapes</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

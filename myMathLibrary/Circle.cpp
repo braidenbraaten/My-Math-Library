@@ -10,7 +10,7 @@ namespace bab
 
 	Circle::Circle()
 	{
-		P = P.normal();
+		P.Normalize();
 		radius = 1;
 	}
 
