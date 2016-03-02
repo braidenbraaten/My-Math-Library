@@ -118,8 +118,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Circle.cpp" />
     <ClCompile Include="mat3.cpp" />
     <ClCompile Include="mat4.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Transformations.cpp" />
     <ClCompile Include="vec2.cpp" />
@@ -127,8 +129,11 @@
     <ClCompile Include="vec4.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="GCData.h" />
     <ClInclude Include="mat3.h" />
     <ClInclude Include="mat4.h" />
+    <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Transformations.h" />
     <ClInclude Include="vec2.h" />
     <ClInclude Include="vec3.h" />

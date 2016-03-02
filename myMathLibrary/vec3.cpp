@@ -1,5 +1,6 @@
 #include "vec3.h"
 
+
  namespace bab 
  {
 	 float Vec3::Magnitude()
@@ -83,6 +84,17 @@
 		 sum.y = lhs.y * rhs.y;
 		 sum.z = lhs.z * rhs.z;
 		 return sum;
+	 }
+
+	 Vec3 operator*(const mat3 &m, const Vec3 &vec)
+	 {
+		 Vec3 result;
+			
+		 result.x = (m.Matrix[0][0] * vec.x) + (m.Matrix[0][1] * vec.y) + (m.Matrix[0][2] * vec.z);
+		 result.y = (m.Matrix[1][0] * vec.x) + (m.Matrix[1][1] * vec.y) + (m.Matrix[1][2] * vec.z);
+		 result.z = (m.Matrix[2][0] * vec.x) + (m.Matrix[2][1] * vec.y) + (m.Matrix[2][2] * vec.z);
+
+		 return result;
 	 }
 
 	 Vec3 operator/(const Vec3 &lhs, const Vec3 &rhs)
