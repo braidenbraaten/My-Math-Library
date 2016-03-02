@@ -40,6 +40,9 @@
     <Filter Include="Header Files\Collision">
       <UniqueIdentifier>{7b0aa03c-21e3-4302-99bb-1d58b4f02979}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Collision">
+      <UniqueIdentifier>{f074fdef-6184-469b-9a5e-2765cdf74a41}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -69,6 +72,9 @@
     <ClCompile Include="Rectangle.cpp">
       <Filter>Source Files\Shapes</Filter>
     </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Source Files\Collision</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vec2.h">
@@ -97,6 +103,9 @@
     </ClInclude>
     <ClInclude Include="Rectangle.h">
       <Filter>Header Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Header Files\Collision</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

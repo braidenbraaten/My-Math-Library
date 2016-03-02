@@ -3,7 +3,7 @@
 namespace bab
 {
 
-	//Pos is based in the center of the object not the top left corner
+	//Pos is based in the center of the object not the top left 
 	class Rectangle
 	{
 		Vec2 Pos;
