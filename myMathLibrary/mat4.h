@@ -26,7 +26,7 @@ namespace bab
 		void Scale(float, float, float);
 		void Rotate(char, float);
 
-		//The Difference between the two is that translate will move x,y, and z away from the point it is currently at
+		//The Difference between the two is that translate will move x,y, and z away from the Vec2 it is currently at
 		//While MoveTo will move the matrix to the exact location specified no matter where it is currently
 		void Translate(float, float,float);
 		void MoveTo(float, float, float);

@@ -35,6 +35,7 @@ namespace bab
 	bool operator< (const Vec2 &lhs, const Vec2 &rhs);
 	bool operator<=(const Vec2 &lhs, const Vec2 &rhs);
 
+
 	bool operator> (const Vec2 &lhs, const Vec2 &rhs);
 	bool operator>=(const Vec2 &lhs, const Vec2 &rhs);
 

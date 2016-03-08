@@ -2,18 +2,23 @@
 #include "Circle.h"
 #include "Rectangle.h"
 #include "vec2.h"
+
 namespace bab
 {
 	class Collision
 	{
+
+		//   allows you to clamp values 
+		template <typename T>
+		T clamp(T value,T min,T max);
 		
 		//   Check Circle Circle Collision
 		bool CheckCC(const Vec2&, float, const Vec2&, float);
 		bool CheckCC( Circle&,  Circle&);
 		
 		//   Check Circle Rectangle Collision
-		bool CheckCR(const Vec2&, float, const Vec2&, float, float);
-		bool CheckCR(const Circle&, const Rectangle&);
+		bool CheckCR(const Vec2&, float, Vec2, Vec2);
+		bool CheckCR( Circle&,  Rectangle&);
 		
 		//   Check Rectangle Rectangle Collision
 		bool AABB(const Vec2&, float, float, const Vec2&, float, float);

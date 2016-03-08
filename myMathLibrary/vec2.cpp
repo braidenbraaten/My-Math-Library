@@ -21,8 +21,8 @@ namespace bab
 
 	void Vec2::Normalize()
 	{
-		x = x / Magnitude();
-		y = y / Magnitude();
+	    this->x = x / Magnitude();
+		this->y = y / Magnitude();
 	}
 
 
@@ -36,7 +36,7 @@ namespace bab
 	}
 
 
-	//if the value is positive than both vecs are pointing in the same direction ,  value = 0 if perp, value = negative if opposite
+	//if the value is positive than both vecs are Vec2ing in the same direction ,  value = 0 if perp, value = negative if opposite
 	float dot(const Vec2 &lhs, const Vec2 &rhs)
 	{
 		float product = (lhs.x * rhs.x) + (lhs.y * rhs.y);
