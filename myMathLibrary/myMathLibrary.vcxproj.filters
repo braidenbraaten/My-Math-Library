@@ -31,17 +31,17 @@
     <Filter Include="Source Files\Shapes">
       <UniqueIdentifier>{a107ed4d-5a19-469e-8597-5fcff881a696}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Transforms">
-      <UniqueIdentifier>{86ba369d-71c9-4dcb-a366-3ce4ae81119e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Transforms">
-      <UniqueIdentifier>{656dd842-8f54-4f53-95b7-de20c108afcb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Collision">
       <UniqueIdentifier>{7b0aa03c-21e3-4302-99bb-1d58b4f02979}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Collision">
       <UniqueIdentifier>{f074fdef-6184-469b-9a5e-2765cdf74a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components">
+      <UniqueIdentifier>{0c5575d5-e4ad-4afc-b89a-875eac5ec097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{0cac3aa6-5dc1-41d4-a563-f08746312522}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -63,9 +63,6 @@
     <ClCompile Include="vec4.cpp">
       <Filter>Source Files\Vectors</Filter>
     </ClCompile>
-    <ClCompile Include="Transformations.cpp">
-      <Filter>Source Files\Transforms</Filter>
-    </ClCompile>
     <ClCompile Include="Circle.cpp">
       <Filter>Source Files\Shapes</Filter>
     </ClCompile>
@@ -74,6 +71,9 @@
     </ClCompile>
     <ClCompile Include="Collision.cpp">
       <Filter>Source Files\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Source Files\Components</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -92,9 +92,6 @@
     <ClInclude Include="mat4.h">
       <Filter>Header Files\Matricies</Filter>
     </ClInclude>
-    <ClInclude Include="Transformations.h">
-      <Filter>Header Files\Transforms</Filter>
-    </ClInclude>
     <ClInclude Include="GCData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -106,6 +103,9 @@
     </ClInclude>
     <ClInclude Include="Collision.h">
       <Filter>Header Files\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Header Files\Components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -3,11 +3,10 @@
 namespace bab
 {
 	
-	struct Pos { float x, y; };
+
 	class Circle
 	{
 		Vec2 P;
-		Pos pos;
 		float radius;
 	public:
 		Circle(Vec2,float);

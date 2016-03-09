@@ -8,7 +8,9 @@ namespace bab
 	//This is a commit test
 	class Collision
 	{
+	public:
 
+		float dist(const Vec2&, const Vec2&);
 		//   allows you to clamp values 
 		template <typename T>
 		T clamp(T value,T min,T max);
@@ -22,7 +24,7 @@ namespace bab
 		bool CheckCR( Circle&,  Rectangle&);
 		
 		//   Check Rectangle Rectangle Collision
-		bool AABB(const Vec2&, float, float, const Vec2&, float, float);
+		bool AABB(const Vec2&, const Vec2&, const Vec2&, const Vec2&);
 		bool AABB(const Rectangle&, const Rectangle&);
 	};
 }

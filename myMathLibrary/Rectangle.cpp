@@ -31,7 +31,8 @@ namespace bab
 	{
 		Pos.x = max.x / 2;
 		Pos.y = max.y / 2;
-	
+		length = max.x - min.x;
+		width = max.y - min.y;
 		Min = min;
 		Max = max;
 	}
@@ -41,8 +42,8 @@ namespace bab
 	void Rectangle::setPos(Vec2 vec) { Pos = vec; }
 	void Rectangle::setMin(float x, float y) { Min.x = x; Min.y = y; }
 	void Rectangle::setMax(float x, float y) { Max.x = x; Max.y = y; }
-	Vec2 Rectangle::getMin() { return Min; }
-	Vec2 Rectangle::getMax() { return Max; }
+	Vec2 Rectangle::getMin() const { return Min; }
+	Vec2 Rectangle::getMax() const { return Max; }
 
 
 }
