@@ -43,4 +43,8 @@ namespace bab
 	bool Collision::AABB(const Vec2& aMin, const Vec2& aMax, const Vec2& bMin, const Vec2& bMax) {return (aMax > bMin && bMin > aMin || bMax > aMin && bMin < aMin);}
 	
 	bool Collision::AABB(const Rectangle& a, const  Rectangle& b) {return (a.getMax() > b.getMin() && b.getMin() > a.getMin() || b.getMax() > a.getMin() && b.getMin() < a.getMin());}
+
+											//the Collision Check for Circle vs Plane may be wrong, Can't tell if it is a multiplication or dot product
+
+	bool Collision::CheckCP(const Vec2& cPos, float cRadius, const Vec2& pPos, const Vec2& pNorm) { return ( dot(cPos, pPos) <= cRadius); }
 }

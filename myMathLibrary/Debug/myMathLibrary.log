@@ -1,22 +1,40 @@
-﻿Build started 3/8/2016 5:52:05 PM.
+﻿Build started 3/14/2016 11:10:11 AM.
      1>Project "C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\myMathLibrary\myMathLibrary.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Transform.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\myMathLibrary.pdb" /Gd /TP /analyze- /errorReport:prompt Circle.cpp Collision.cpp mat3.cpp mat4.cpp Plane2D.cpp Ray2D.cpp Rectangle.cpp Source.cpp Transform.cpp vec2.cpp vec3.cpp vec4.cpp
+         vec4.cpp
+         vec3.cpp
+         vec2.cpp
          Transform.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\Debug\myMathLibrary.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\Debug\myMathLibrary.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\Debug\myMathLibrary.lib" /MACHINE:X86 Debug\Circle.obj
+         Source.cpp
+         Rectangle.cpp
+         Ray2D.cpp
+         Plane2D.cpp
+         mat4.cpp
+     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\mat4.cpp(121): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\mat4.cpp(129): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+         mat3.cpp
+     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\mat3.cpp(96): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\mat3.cpp(104): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+         Collision.cpp
+         Circle.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\Debug\myMathLibrary.lib" /NOLOGO Debug\Circle.obj
          Debug\Collision.obj
          Debug\mat3.obj
          Debug\mat4.obj
+         Debug\Plane2D.obj
+         Debug\Ray2D.obj
          Debug\Rectangle.obj
          Debug\Source.obj
          Debug\Transform.obj
          Debug\vec2.obj
          Debug\vec3.obj
          Debug\vec4.obj
-         myMathLibrary.vcxproj -> C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\Debug\myMathLibrary.exe
+         myMathLibrary.vcxproj -> C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\Debug\myMathLibrary.lib
      1>Done Building Project "C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\myMathLibrary\myMathLibrary.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.00
+Time Elapsed 00:00:01.44

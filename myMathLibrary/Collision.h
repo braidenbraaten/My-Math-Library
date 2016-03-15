@@ -2,6 +2,8 @@
 #include "Circle.h"
 #include "Rectangle.h"
 #include "vec2.h"
+#include "Ray2D.h"
+#include "Plane2D.h"
 
 namespace bab
 {
@@ -26,5 +28,8 @@ namespace bab
 		//   Check Rectangle Rectangle Collision
 		bool AABB(const Vec2&, const Vec2&, const Vec2&, const Vec2&);
 		bool AABB(const Rectangle&, const Rectangle&);
+
+		//Circle vs Plane Collision
+		bool CheckCP(const Vec2&, float, const Vec2&, const Vec2&);
 	};
 }
