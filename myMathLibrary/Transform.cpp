@@ -3,8 +3,18 @@ namespace bab
 {
 	Transform::Transform()
 	{
-			
+		pos = {0,0};
+		scale = {1,1};
+		angle = 0;
 	}
+	Transform::Transform(const Vec2& p, const Vec2& s, float a)
+	{
+		pos = p;
+		scale = s;
+		angle = a;
+		
+	}
+
 
 
 	void Transform::setParent(Transform* newParent)

@@ -2,18 +2,21 @@
 #include "vec2.h"
 #include "mat3.h"
 #include <list>
+
 namespace bab
 {
 	class Transform
 	{
+	private:
 		Transform *Parent;
 		std::list<Transform*> Children;
 		Vec2 pos, scale;
 		float angle;
 	public:
 		Transform();
-		~Transform();
-		mat3 getGlobalTransform() const;
+		Transform(const Vec2&, const Vec2&, float);
+		//~Transform();
+		//mat3 getGlobalTransform() const;
 
 		void setParent(Transform*);
 		void setPos   (const Vec2&);
@@ -24,8 +27,7 @@ namespace bab
 		Vec2 getScale   ()    const;
 		float getAngle  ()    const;
 
-		Vec2 getRight()					  const;
-		Vec2 getUp()					  const;
+
 
 
 

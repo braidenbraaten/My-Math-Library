@@ -51,6 +51,7 @@ int main()
 		bab::Ray2D ray(vec2, vec, collision.dist(circle.getPos(), circle2.getPos()));
 		sfw::drawLine(ray.getPos().x, ray.getPos().y, ray.getDirection().x, ray.getDirection().y, RED);
 
+		//updates the circle's position during the loop
 		 circle2.setPos(vec2);
 		 circle.setPos(vec);
 		 if (!hasHappened) { vec2.x += 5; vec.y += 5; }
