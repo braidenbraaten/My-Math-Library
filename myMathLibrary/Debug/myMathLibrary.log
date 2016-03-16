@@ -1,23 +1,19 @@
-﻿Build started 3/15/2016 5:53:01 PM.
+﻿Build started 3/16/2016 10:19:10 AM.
      1>Project "C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\myMathLibrary\myMathLibrary.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\myMathLibrary.pdb" /Gd /TP /analyze- /errorReport:prompt Collider.cpp Component.cpp GameObjects.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\myMathLibrary.pdb" /Gd /TP /analyze- /errorReport:prompt Collider.cpp Component.cpp
          Component.cpp
      1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C3646: 'objectComponents': unknown override specifier
      1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
          Collider.cpp
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.h(15): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.h(15): error C3646: 'collider': unknown override specifier
      1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.h(15): error C2238: unexpected token(s) preceding ';'
      1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.h(28): error C3646: 'getCollider': unknown override specifier
      1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.h(28): error C2059: syntax error: '('
      1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.h(28): error C2238: unexpected token(s) preceding ';'
-         Generating Code...
-         Compiling...
-         GameObjects.cpp
          Generating Code...
      1>Done Building Project "C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\myMathLibrary\myMathLibrary.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.66
+Time Elapsed 00:00:00.50

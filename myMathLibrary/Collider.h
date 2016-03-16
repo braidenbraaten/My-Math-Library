@@ -5,8 +5,8 @@ namespace bab
 {
 	class Collider 
 	{
-
-
+	public:
+		Collider();
 	};
 
 

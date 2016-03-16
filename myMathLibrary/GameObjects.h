@@ -12,10 +12,12 @@ namespace bab
 		GameObjects();
 
 		void addObject();
-
+		
 		//Should update all game objects
 		void UpdateObjects();
 	};
+
+	
 }
 
 //GameObjects gameObjects.

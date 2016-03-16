@@ -4,7 +4,8 @@ namespace bab
 {
 	class Sprite
 	{
-
+	public:
+		Sprite();
 	};
 
 }

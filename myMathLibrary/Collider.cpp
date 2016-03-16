@@ -2,6 +2,9 @@
 
 namespace bab
 {
-
+	Collider::Collider()
+	{
+		
+	}
 
 }

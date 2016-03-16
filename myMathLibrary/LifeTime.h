@@ -5,7 +5,7 @@ namespace bab
 	class LifeTime
 	{
 
-
+		LifeTime();
 
 	};
 
