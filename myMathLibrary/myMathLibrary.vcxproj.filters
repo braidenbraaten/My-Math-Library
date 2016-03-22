@@ -25,9 +25,6 @@
     <Filter Include="Source Files\Matricies">
       <UniqueIdentifier>{1bc194d4-d41d-466e-860b-ba5ffba8ef35}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Vectors">
-      <UniqueIdentifier>{4542d155-fac6-4efe-8c59-0edd513fb96c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Shapes">
       <UniqueIdentifier>{a107ed4d-5a19-469e-8597-5fcff881a696}</UniqueIdentifier>
     </Filter>
@@ -43,6 +40,9 @@
     <Filter Include="Source Files\Components">
       <UniqueIdentifier>{0cac3aa6-5dc1-41d4-a563-f08746312522}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Shapes\Vectors">
+      <UniqueIdentifier>{4542d155-fac6-4efe-8c59-0edd513fb96c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -55,13 +55,13 @@
       <Filter>Source Files\Matricies</Filter>
     </ClCompile>
     <ClCompile Include="vec2.cpp">
-      <Filter>Source Files\Vectors</Filter>
+      <Filter>Source Files\Shapes\Vectors</Filter>
     </ClCompile>
     <ClCompile Include="vec3.cpp">
-      <Filter>Source Files\Vectors</Filter>
+      <Filter>Source Files\Shapes\Vectors</Filter>
     </ClCompile>
     <ClCompile Include="vec4.cpp">
-      <Filter>Source Files\Vectors</Filter>
+      <Filter>Source Files\Shapes\Vectors</Filter>
     </ClCompile>
     <ClCompile Include="Circle.cpp">
       <Filter>Source Files\Shapes</Filter>

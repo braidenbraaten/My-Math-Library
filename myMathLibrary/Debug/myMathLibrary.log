@@ -1,52 +1,35 @@
-﻿Build started 3/21/2016 5:53:24 PM.
+﻿Build started 3/22/2016 1:51:54 PM.
      1>Project "C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\myMathLibrary\myMathLibrary.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\myMathLibrary.pdb" /Gd /TP /analyze- /errorReport:prompt Collider.cpp Component.cpp GameObjects.cpp GameStates.cpp
-         GameStates.cpp
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2065: 'GameObjects': undeclared identifier
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2059: syntax error: '>'
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2976: 'std::vector': too few template arguments
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(678): note: see declaration of 'std::vector'
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2133: 'bab::GO_Ptrs': unknown size
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2512: 'std::vector': no appropriate default constructor available
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(678): note: see declaration of 'std::vector'
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\myMathLibrary.pdb" /Gd /TP /analyze- /errorReport:prompt GameObjects.cpp LifeTime.cpp Sprite.cpp
+         Sprite.cpp
+         LifeTime.cpp
          GameObjects.cpp
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2065: 'GameObjects': undeclared identifier
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2059: syntax error: '>'
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2976: 'std::vector': too few template arguments
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(678): note: see declaration of 'std::vector'
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2133: 'bab::GO_Ptrs': unknown size
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2512: 'std::vector': no appropriate default constructor available
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(678): note: see declaration of 'std::vector'
-         Component.cpp
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2065: 'GameObjects': undeclared identifier
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2059: syntax error: '>'
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2976: 'std::vector': too few template arguments
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(678): note: see declaration of 'std::vector'
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2133: 'bab::GO_Ptrs': unknown size
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2512: 'std::vector': no appropriate default constructor available
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(678): note: see declaration of 'std::vector'
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(18): error C3646: 'objectComponents': unknown override specifier
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.cpp(6): error C2248: 'bab::LifeTime::LifeTime': cannot access private member declared in class 'bab::LifeTime'
-         c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\lifetime.h(8): note: see declaration of 'bab::LifeTime::LifeTime'
-         c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\lifetime.h(6): note: see declaration of 'bab::LifeTime'
-         Collider.cpp
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.h(16): error C3646: 'collider': unknown override specifier
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.h(29): error C3646: 'getCollider': unknown override specifier
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.h(29): error C2059: syntax error: '('
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\component.h(29): error C2238: unexpected token(s) preceding ';'
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2065: 'GameObjects': undeclared identifier
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2059: syntax error: '>'
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2976: 'std::vector': too few template arguments
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(678): note: see declaration of 'std::vector'
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2133: 'bab::GO_Ptrs': unknown size
-     1>c:\users\braiden.braaten\documents\visual studio 2015\projects\mymathlibrary\mymathlibrary\gameobjects.h(9): error C2512: 'std::vector': no appropriate default constructor available
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(678): note: see declaration of 'std::vector'
          Generating Code...
-     1>Done Building Project "C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\myMathLibrary\myMathLibrary.vcxproj" (Build target(s)) -- FAILED.
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\Debug\myMathLibrary.lib" /NOLOGO Debug\Circle.obj
+         Debug\Collider.obj
+         Debug\Collision.obj
+         Debug\Component.obj
+         Debug\GameObjects.obj
+         Debug\GameStates.obj
+         Debug\LifeTime.obj
+         Debug\mat3.obj
+         Debug\mat4.obj
+         Debug\Plane2D.obj
+         Debug\Ray2D.obj
+         Debug\Rectangle.obj
+         Debug\RigidBody.obj
+         Debug\Source.obj
+         Debug\Sprite.obj
+         Debug\Transform.obj
+         Debug\vec2.obj
+         Debug\vec3.obj
+         Debug\vec4.obj
+     1>GameObjects.obj : warning LNK4006: "class std::vector<class bab::GameObjects *,class std::allocator<class bab::GameObjects *> > bab::GO_Ptrs" (?GO_Ptrs@bab@@3V?$vector@PAVGameObjects@bab@@V?$allocator@PAVGameObjects@bab@@@std@@@std@@A) already defined in GameStates.obj; second definition ignored
+         myMathLibrary.vcxproj -> C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\Debug\myMathLibrary.lib
+     1>Done Building Project "C:\Users\braiden.braaten\Documents\Visual Studio 2015\Projects\myMathLibrary\myMathLibrary\myMathLibrary.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.43
+Time Elapsed 00:00:00.42

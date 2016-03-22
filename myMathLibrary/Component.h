@@ -1,5 +1,5 @@
 #pragma once
-#include "GameObjects.h"
+
 #include "Transform.h  "
 #include "RigidBody.h  "
 #include "Collider.h   "
@@ -19,19 +19,19 @@ namespace bab
 	public:
 		Components();
 
-		void      setTransform();
+		void      setParentTransform( Transform&);
 		Transform getTransform();
 
-		void      setRigidBody();
+		void      setRigidBody( RigidBody&);
 		RigidBody getRigidBody();
 
-		void      setCollider ();
+		void      setCollider ( Collider&);
 		Collider  getCollider ();
 
-		void      setSprite   ();
+		void      setSprite   ( Sprite&);
 		Sprite    getSprite   ();
 
-		void      setLifeTime ();
+		void      setLifeTime ( LifeTime&);
 		LifeTime  getLifeTime ();
 
 		void Update();

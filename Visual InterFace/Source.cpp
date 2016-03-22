@@ -6,6 +6,7 @@
 #include "Ray2D.h"
 #include "GameObjects.h"
 #include <vector>
+#include <cassert>
 
 bab::Rectangle rectangle;
 bab::Collision collision;

@@ -1,5 +1,5 @@
 #pragma once
-#include "GameObjects.h"
+
 #include "Collision.h"
 
 namespace bab
