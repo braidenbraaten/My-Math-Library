@@ -123,6 +123,7 @@
     <ClCompile Include="Collision.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="GameObjects.cpp" />
+    <ClCompile Include="GameStates.cpp" />
     <ClCompile Include="LifeTime.cpp" />
     <ClCompile Include="mat3.cpp" />
     <ClCompile Include="mat4.cpp" />
@@ -143,10 +144,12 @@
     <ClInclude Include="Collision.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="GameObjects.h" />
+    <ClInclude Include="GameStates.h" />
     <ClInclude Include="GCData.h" />
     <ClInclude Include="LifeTime.h" />
     <ClInclude Include="mat3.h" />
     <ClInclude Include="mat4.h" />
+    <ClInclude Include="ObjectData.h" />
     <ClInclude Include="Plane2D.h" />
     <ClInclude Include="Ray2D.h" />
     <ClInclude Include="Rectangle.h" />

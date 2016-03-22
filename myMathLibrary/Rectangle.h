@@ -19,7 +19,9 @@ namespace bab
 		void setPos(float, float);
 		void setPos(Vec2);
 		void setMin(float, float);
+		void setMin(Vec2);
 		void setMax(float, float);
+		void setMax(Vec2);
 		Vec2 getMin() const;
 		Vec2 getMax() const;
 

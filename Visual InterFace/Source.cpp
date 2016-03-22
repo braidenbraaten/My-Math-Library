@@ -4,6 +4,8 @@
 #include "Rectangle.h"
 #include "Collision.h"
 #include "Ray2D.h"
+#include "GameObjects.h"
+#include <vector>
 
 bab::Rectangle rectangle;
 bab::Collision collision;
@@ -14,6 +16,13 @@ void DrawRectangle(const bab::Rectangle& rec)
 	sfw::drawLine(rec.getMax().x, rec.getMin().y, rec.getMin().x, rec.getMin().y, CYAN);
 	sfw::drawLine(rec.getMin().x, rec.getMin().y, rec.getMin().x, rec.getMax().y, CYAN);
 }
+
+
+
+
+
+
+
 
 
 const int Width = 800;
@@ -27,8 +36,8 @@ int main()
 	rectangle.setMax(Width - 10, 10);
 	bab::Circle circle;
 	bab::Circle circle2;
-	;
-	
+
+
 	bab::Vec2 vec;
 	bab::Vec2 vec2;
 	vec.x = Width / 2;
@@ -40,7 +49,7 @@ int main()
 	
 	circle2.setRadius(50);
 	
-
+	
 
 	sfw::initContext();
 

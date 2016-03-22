@@ -57,4 +57,12 @@ namespace bab
 		
 	}
 
+	//where all of the component stuff will Update
+	void Components::Update()
+	{
+
+
+		collider.Update();
+	}
+
 }

@@ -52,6 +52,10 @@ namespace bab
 		return this->angle;
 	}
 
+	void Transform::Update()
+	{
+		
+	}
 
 	
 }

@@ -28,6 +28,8 @@ namespace bab
 		float getAngle  ()    const;
 
 
+		void Update();
+
 
 
 
