@@ -34,12 +34,6 @@
     <Filter Include="Source Files\Collision">
       <UniqueIdentifier>{f074fdef-6184-469b-9a5e-2765cdf74a41}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Components">
-      <UniqueIdentifier>{0c5575d5-e4ad-4afc-b89a-875eac5ec097}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Components">
-      <UniqueIdentifier>{0cac3aa6-5dc1-41d4-a563-f08746312522}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Shapes\Vectors">
       <UniqueIdentifier>{4542d155-fac6-4efe-8c59-0edd513fb96c}</UniqueIdentifier>
     </Filter>
@@ -72,34 +66,10 @@
     <ClCompile Include="Collision.cpp">
       <Filter>Source Files\Collision</Filter>
     </ClCompile>
-    <ClCompile Include="Transform.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
     <ClCompile Include="Ray2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Plane2D.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Component.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="GameObjects.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="RigidBody.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="Collider.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="LifeTime.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="GameStates.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -119,9 +89,6 @@
     <ClInclude Include="mat4.h">
       <Filter>Header Files\Matricies</Filter>
     </ClInclude>
-    <ClInclude Include="GCData.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Circle.h">
       <Filter>Header Files\Shapes</Filter>
     </ClInclude>
@@ -131,37 +98,10 @@
     <ClInclude Include="Collision.h">
       <Filter>Header Files\Collision</Filter>
     </ClInclude>
-    <ClInclude Include="Transform.h">
-      <Filter>Header Files\Components</Filter>
-    </ClInclude>
     <ClInclude Include="Ray2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Plane2D.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Component.h">
-      <Filter>Header Files\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="GameObjects.h">
-      <Filter>Header Files\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="RigidBody.h">
-      <Filter>Header Files\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="Collider.h">
-      <Filter>Header Files\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite.h">
-      <Filter>Header Files\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="LifeTime.h">
-      <Filter>Header Files\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="GameStates.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjectData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

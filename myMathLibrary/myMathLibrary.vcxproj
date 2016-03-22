@@ -119,43 +119,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
-    <ClCompile Include="Collider.cpp" />
     <ClCompile Include="Collision.cpp" />
-    <ClCompile Include="Component.cpp" />
-    <ClCompile Include="GameObjects.cpp" />
-    <ClCompile Include="GameStates.cpp" />
-    <ClCompile Include="LifeTime.cpp" />
     <ClCompile Include="mat3.cpp" />
     <ClCompile Include="mat4.cpp" />
     <ClCompile Include="Plane2D.cpp" />
     <ClCompile Include="Ray2D.cpp" />
     <ClCompile Include="Rectangle.cpp" />
-    <ClCompile Include="RigidBody.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Sprite.cpp" />
-    <ClCompile Include="Transform.cpp" />
     <ClCompile Include="vec2.cpp" />
     <ClCompile Include="vec3.cpp" />
     <ClCompile Include="vec4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
-    <ClInclude Include="Collider.h" />
     <ClInclude Include="Collision.h" />
-    <ClInclude Include="Component.h" />
-    <ClInclude Include="GameObjects.h" />
-    <ClInclude Include="GameStates.h" />
-    <ClInclude Include="GCData.h" />
-    <ClInclude Include="LifeTime.h" />
     <ClInclude Include="mat3.h" />
     <ClInclude Include="mat4.h" />
-    <ClInclude Include="ObjectData.h" />
     <ClInclude Include="Plane2D.h" />
     <ClInclude Include="Ray2D.h" />
     <ClInclude Include="Rectangle.h" />
-    <ClInclude Include="RigidBody.h" />
-    <ClInclude Include="Sprite.h" />
-    <ClInclude Include="Transform.h" />
     <ClInclude Include="vec2.h" />
     <ClInclude Include="vec3.h" />
     <ClInclude Include="vec4.h" />
