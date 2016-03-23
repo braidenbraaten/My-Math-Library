@@ -10,6 +10,12 @@ namespace bab
 	}
 	//update the object's components here
 	
+	Components GameObjects::getCom()
+	{
+		return objectComponents;
+	}
+
+
 	void GameObjects::UpdateObject()
 	{
 		//trying to iterate through the vector until it finds this object and only updates this object
@@ -20,7 +26,7 @@ namespace bab
 				if(this->ActiveComponents[0] == true) GameObjects::getList().front()->objectComponents.getTransform().Update();
 				if(this->ActiveComponents[2] == true) GameObjects::getList().front()->objectComponents.getCollider().Update();
 				//unfinished
-				if (this->ActiveComponents[3] == true) GameObjects::getList().front()->objectComponents.getSprite();
+				if (this->ActiveComponents[3] == true) GameObjects::getList().front()->objectComponents.getSprite().Update();
 				if(this->ActiveComponents[4] == true) GameObjects::getList().front()->objectComponents.getLifeTime().Update();
 				if(this->ActiveComponents[1] == true) GameObjects::getList().front()->objectComponents.getRigidBody();
 			}

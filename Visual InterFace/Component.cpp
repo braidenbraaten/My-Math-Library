@@ -47,7 +47,7 @@ namespace bab
 	Sprite Components::getSprite()
 	{
 		assert(false && "IMPLEMENT ME");
-		return Sprite();
+		return sprite;
 	}
 
 	void Components::setLifeTime( LifeTime &newL)

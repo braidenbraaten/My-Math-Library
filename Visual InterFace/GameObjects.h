@@ -16,14 +16,14 @@ namespace bab
 		// [0] Transform    [1] Rigidbody   [2] Collider  [3] Sprite  [4] Lifetime
 		bool ActiveComponents[5] = {false};
 		bool ActiveObject = true;
-		Components objectComponents;
-		//std::list<GameObjects*> Objects;
-
 		
+		//creates the components for your game object
+		Components objectComponents;
 
-		//A pointer to this object so other objects can see where it is
+
 	public:
 
+		//Basically a function that gets the list
 		static std::vector<class bab::GameObjects *>& getList()
 		{
 			static std::vector<class bab::GameObjects *> ptrs;
@@ -35,6 +35,9 @@ namespace bab
 
 		GameObjects *thisObject;
 		GameObjects();
+
+		//Gets the Object's Components
+		Components getCom();
 		
 		//Should update all game object's components
 		void UpdateObject();

@@ -43,14 +43,36 @@ namespace bab
 		}
 	}
 
+	//decides if the colliders shape will draw to the screen or not
+	void Collider::isShapeVisible(bool b) { isVisible = b; }
+
+	//returns the type of collider as a char array
 	char Collider::getColType()
 	{
 		return colType[10];
 	}
 
+	//Updates the collider / the collision checks for the game objects
 	void Collider::Update()
 	{
-		
+		if (isVisible == true)
+		{
+			switch (shape)
+			{
+			case CIRCLE:
+				sfw::drawCircle(circle.getPos().x, circle.getPos().y, circle.getRadius(), 13, CYAN);
+				break;
+
+			case RECT:
+				sfw::drawLine(rectangle.getMin().x, rectangle.getMax().y, rectangle.getMax().x, rectangle.getMax().y, CYAN);
+				sfw::drawLine(rectangle.getMax().x, rectangle.getMax().y, rectangle.getMax().x, rectangle.getMin().y, CYAN);
+				sfw::drawLine(rectangle.getMax().x, rectangle.getMin().y, rectangle.getMin().x, rectangle.getMin().y, CYAN);
+				sfw::drawLine(rectangle.getMin().x, rectangle.getMin().y, rectangle.getMin().x, rectangle.getMax().y, CYAN);
+				break;
+			case EMPTY:
+				break;
+			}
+		}
 	}
 
 

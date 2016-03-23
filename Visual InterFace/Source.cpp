@@ -7,6 +7,7 @@
 #include "GameObjects.h"
 #include <vector>
 #include <cassert>
+#include "Sprite.h"
 
 bab::Rectangle rectangle;
 bab::Collision collision;
@@ -20,7 +21,7 @@ void DrawRectangle(const bab::Rectangle& rec)
 
 
 
-
+bab::GameObjects Player;
 
 
 
@@ -60,6 +61,10 @@ int main()
 		//Drawing a ray from circle 1 to circle 2
 		bab::Ray2D ray(vec2, vec, collision.dist(circle.getPos(), circle2.getPos()));
 		sfw::drawLine(ray.getPos().x, ray.getPos().y, ray.getDirection().x, ray.getDirection().y, RED);
+		
+
+		Player.UpdateObject();
+
 
 		//updates the circle's position during the loop
 		 circle2.setPos(vec2);

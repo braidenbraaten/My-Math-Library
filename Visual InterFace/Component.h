@@ -10,7 +10,7 @@ namespace bab
 	 //Think of it as Components are derived from this game object
 	class Components 
 	{
-
+		 
 		Transform transform;
 		RigidBody rigidBody;
 		Collider  collider;
