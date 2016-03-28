@@ -8,6 +8,7 @@
 #include <vector>
 #include <cassert>
 #include "Sprite.h"
+#include <iostream>
 
 bab::Rectangle rectangle;
 bab::Collision collision;
@@ -26,7 +27,6 @@ bab::GameObjects Player;
 
 
 
-
 const int Width = 800;
 const int Height = 600;
 
@@ -35,14 +35,17 @@ static bool hasHappenedUp = false;
 int main()
 {
 
-	
+	Player.getCom().getSprite().setSpritePath("./res/cat.jpg");
+	Player.getCom().getSprite().setPos(Player.getCom().getTransform().getPosition());
 
 	sfw::initContext();
 
+	std::string bob = "hi";
+	bob = Player.getCom().getSprite().getFilePath();
 	
 	while (sfw::stepContext())
 	{
-		
+		std::cout << bob << std::endl;
 
 	};
 

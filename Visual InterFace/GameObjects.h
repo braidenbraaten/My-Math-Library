@@ -24,9 +24,9 @@ namespace bab
 	public:
 
 		//Basically a function that gets the list of gameObjects
-		static std::vector<class bab::GameObjects *>& getList()
+		static std::vector<GameObjects *>& getList()
 		{
-			static std::vector<class bab::GameObjects *> ptrs;
+			static std::vector<GameObjects *> ptrs;
 			return ptrs;
 		}
 

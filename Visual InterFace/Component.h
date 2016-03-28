@@ -29,6 +29,7 @@ namespace bab
 		Collider  getCollider ();
 
 		void      setSprite   ( Sprite&);
+		void	  setSprite   (std::string path, Vec2 pos, Vec2 scale, float rotation);
 		Sprite    getSprite   ();
 
 		void      setLifeTime ( LifeTime&);

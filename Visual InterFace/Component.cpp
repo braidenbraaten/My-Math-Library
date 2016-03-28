@@ -44,9 +44,18 @@ namespace bab
 		sprite = newS;
 	}
 
+	void Components::setSprite(std::string path, Vec2 pos, Vec2 scale, float rotation)
+	{
+		sprite.setSpritePath(path);
+		sprite.setPos(pos);
+		sprite.setScale(scale);
+		sprite.setRotation(rotation);
+		
+	}
+
 	Sprite Components::getSprite()
 	{
-		assert(false && "IMPLEMENT ME");
+		//assert(false && "IMPLEMENT ME");
 		return sprite;
 	}
 

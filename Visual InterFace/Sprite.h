@@ -21,6 +21,7 @@ namespace bab
 		//the name handle for the sprite in order to fetch info about it from SFW
 		//it holds the filepath for the texture
 		unsigned handle;
+		std::string filePath = {};
 
 	public:
 		Sprite();
@@ -47,6 +48,8 @@ namespace bab
 
 		Vec2 getPos();
 		void setPos(Vec2);
+
+		std::string getFilePath();
 
 		void Update();
 			
