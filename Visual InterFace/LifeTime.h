@@ -8,7 +8,7 @@ namespace bab
 
 		
 		//countdown timer
-		float aliveTime = 0;
+		float aliveTime           = 0;
 		float activeCollisionTime = 0;
 		//tells us if the object is dead
 		bool isAlive = true;
@@ -23,12 +23,10 @@ namespace bab
 
 
 
-		float getAliveTime();
-
+		float getAliveTime(     );
 		void  setAliveTime(float);
 
-		bool getIsAlive();
-
+		bool getIsAlive(    );
 		void setIsAlive(bool);
 
 		void Update();

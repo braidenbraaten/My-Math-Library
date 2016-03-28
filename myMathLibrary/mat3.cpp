@@ -110,7 +110,6 @@ namespace bab
 	mat3 mat3::Scale(float x, float y)
 	{
 		mat3 result;
-		mat3 answer;
 
 		if (x == 0) { x = 1; }
 		if (y == 0) { y = 1; }

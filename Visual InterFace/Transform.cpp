@@ -27,6 +27,8 @@ namespace bab
 		this->pos = newPos;
 	}
 
+	void Transform::setPos(float x, float y) { this->pos.x = x; this->pos.y = y; }
+
 	void Transform::setScale(const Vec2& newScale)
 	{
 		this->scale = newScale;

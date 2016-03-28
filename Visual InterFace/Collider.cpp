@@ -2,6 +2,12 @@
 #include "Rectangle.h"
 #include "vec2.h"
 
+
+
+/*
+	this Collider class is setup with the ability to switch between circle and rectangle colliders
+*/
+
 namespace bab
 {
 	Collider::Collider()
@@ -11,14 +17,14 @@ namespace bab
 
 	Collider::Collider(char input[9])
 	{
-		if (input == "circle" || input == "Circle" || input == "c" || input == "cir") shape = CIRCLE; 
+		if (input == "circle"    || input == "Circle"    || input == "c" || input == "cir") shape = CIRCLE; 
 		if (input == "rectangle" || input == "Rectangle" || input == "r" || input == "rec") shape = RECT;
 	}
 
 	Collider::Collider(Vec2 pos, float radius)
 	{
 		shape = CIRCLE;
-		circle.setPos(pos);
+		circle.setPos   (pos   );
 		circle.setRadius(radius);
 	}
 
@@ -55,6 +61,7 @@ namespace bab
 	//Updates the collider / the collision checks for the game objects
 	void Collider::Update()
 	{
+		//Decides if the collider will be visible to the screen
 		if (isVisible == true)
 		{
 			switch (shape)

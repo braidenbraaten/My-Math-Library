@@ -4,7 +4,7 @@ namespace bab
 {
 	void GameState::addObject()
 	{
-		GameObjects::getList().push_back(new GameObjects);
+		 GameObjects::getList().push_back(new GameObjects);
 	}
 
 	void GameState::ClearObjects()

@@ -10,7 +10,7 @@ namespace bab
 	{
 
 	private:
-		enum GAME_STATE {PLAY, EXIT, PAUSE};
+		enum GAME_STATE       {PLAY, EXIT, PAUSE};
 		GAME_STATE gameState = PLAY;
 
 	public:

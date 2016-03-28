@@ -23,7 +23,7 @@ namespace bab
 
 	public:
 
-		//Basically a function that gets the list
+		//Basically a function that gets the list of gameObjects
 		static std::vector<class bab::GameObjects *>& getList()
 		{
 			static std::vector<class bab::GameObjects *> ptrs;
@@ -33,7 +33,7 @@ namespace bab
 		// list of ptrs pointing at your gameObjects
 		
 
-		GameObjects *thisObject;
+		GameObjects *thisObject = &*this;
 		GameObjects();
 
 		//Gets the Object's Components

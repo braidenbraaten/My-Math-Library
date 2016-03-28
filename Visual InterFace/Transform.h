@@ -3,14 +3,16 @@
 #include "mat3.h"
 #include <list>
 
+
 namespace bab
 {
-	class Transform
+	class Transform 
 	{
 	private:
 		Transform *Parent;
 		std::list<Transform*> Children;
 		Vec2 pos, scale;
+		mat3 objectPos;
 		float angle;
 	public:
 		Transform();
@@ -20,8 +22,9 @@ namespace bab
 
 		void setParent(Transform*);
 		void setPos   (const Vec2&);
+		void setPos   (float,float);
 		void setScale (const Vec2&);
-		void setAngle (float);
+		void setAngle (float      );
 
 		Vec2 getPosition()    const;
 		Vec2 getScale   ()    const;
